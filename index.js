@@ -63,3 +63,50 @@ function beforeEach () {
     cats.push('Milo', 'Otis', 'Garfield');
     };
 beforeEach()
+
+function appendCat (name) {
+    let newArray = []
+    newArray=[... cats, "Broom"]
+    return newArray
+
+}
+
+function beforeEach () {
+    cats.length = 0;
+
+    cats.push('Milo', 'Otis', 'Garfield');
+    };
+beforeEach()
+
+function prependCat (name) {
+    let prependArray = []
+    prependArray=["Arnold", ... cats, ]
+    return prependArray
+
+}
+
+function beforeEach () {
+    cats.length = 0;
+
+    cats.push('Milo', 'Otis', 'Garfield');
+    };
+beforeEach()
+
+function removeLastCat(){
+    let removeLast = []
+    removeLast = cats.slice(0,2)
+    return removeLast
+}
+
+function beforeEach () {
+    cats.length = 0;
+
+    cats.push('Milo', 'Otis', 'Garfield');
+    };
+beforeEach()
+
+function removeFirstCat(){
+    let removeFirst = []
+    removeFirst = cats.slice(1)
+    return removeFirst
+}
